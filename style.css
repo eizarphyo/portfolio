@@ -1,0 +1,48 @@
+body{
+    font-family:'Trebuchet MS';
+    background-color: #BCE29E;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    border: 1px dashed gray;
+}
+
+table{
+    border-collapse: collapse; 
+    width:75%;
+    font-size: px;
+    margin-bottom: 20px;
+}
+
+th{
+    border: 2px solid #BCE29E; 
+    border-radius: 10px; 
+}
+
+tr{
+    text-align: center; 
+    height: 40px;
+    background-color: #B99B6B;
+}
+
+td{
+    border: 2px solid #BCE29E;
+    border-radius: 10px;
+    background-color: #F8C4B4;
+}
+
+form{
+    width: 55%; 
+    font-size: 18px;
+    border: 1px hidden; 
+    border-radius: 7px;
+    background-color: #E5EBB2;
+    padding: 8px;
+}
+
+
+
