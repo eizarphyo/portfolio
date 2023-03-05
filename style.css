@@ -1,6 +1,28 @@
+html{
+    font-size: 62.5%;
+}
+
 body{
+    font-size: 1.6rem;
     font-family:'Trebuchet MS';
-    background-color: #BCE29E;
+    background-color: #fefae0;
+}
+
+.navi{
+    /* background-color: #F8C4B4; */
+}
+
+.naviButton{
+    width: 50%;
+    background-color: #231f1f;
+    color: green;
+    display: inline;
+}
+
+.pImg{
+    width: 300px; 
+    border-radius: 50%; 
+    border: 3px dotted green;
 }
 
 a{
@@ -8,45 +30,79 @@ a{
 }
 
 hr{
-    border: 1px dashed gray;
+    border: 1px dashed #d4a373;
+}
+
+.li{
+    width: 1.5rem;
+    display: inline;
 }
 
 table{
     border-collapse: collapse; 
     width:75%;
-    font-size: px;
+    font-size: 1.6rem;
     margin-bottom: 20px;
 }
 
 th{
-    border: 2px solid #BCE29E; 
+    border: 2px solid #fefae0; 
     border-radius: 10px; 
+}
+
+.thRow{
+    height: 48px; 
+    background-color: #ccd5ae;
 }
 
 tr{
     text-align: center; 
     height: 40px;
-    background-color: #B99B6B;
+    /* background-color: #C6FCE5; */
 }
 
 td{
-    border: 2px solid #BCE29E;
+    border: 2px solid #fefae0;
     border-radius: 10px;
-    background-color: #F8C4B4;
+    background-color: #e9edc9;
 }
 
 form{
-    width: 55%; 
-    font-size: 18px;
+    width: 50%; 
+    /* font-size: 18px; */
     border: 1px hidden; 
-    border-radius: 7px;
-    background-color: #E5EBB2;
+    border-radius: 9px;
+    background-color: #faedcd;
     padding: 8px;
+    margin-bottom: 16px;
 }
 
-inputField{
+label{
+    display: block;
+    width: 50%; 
+    float: left
+}
+
+.inputField{
     width: 50%; 
     padding: 7px 20px; 
     margin: 8px;
+    border: 1px solid;
+    border-radius: 3px;
 }
 
+.inputButton{
+    padding: 8px 20px;
+    margin: 8px;
+    border: 1px hidden;
+    border-radius: 5px;
+    background-color: #d4a373;
+}
+
+.contactImg{
+    width: 1.8rem;
+}
+
+/* footer{
+    font-size: 1.5rem;
+} */
