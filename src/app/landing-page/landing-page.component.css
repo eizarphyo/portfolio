@@ -1,0 +1,126 @@
+
+/* MOBILE */
+@media (max-width: 415px) {
+    .downCV {
+        width: 40vw; 
+        }
+
+    .landing-container {
+        background-size: 35%;
+    }
+    
+}
+
+/* TABLET */
+@media (min-width: 416px) and (max-width:1025px) {
+    .downCV {
+        width: 18vw;  
+    
+    }
+
+    .landing-container {
+        background-size: 20%;   
+    }
+}
+
+/* LAPTOP */
+@media (min-width:1025px) {
+    .downCV {
+    width: 11vw;
+    }
+
+    .landing-container {
+        background-size: 20%;   
+    }
+}
+
+.landing-container {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('../../assets/images/sleeping.png');
+    background-repeat: no-repeat;
+    /* background-size: 20%; */
+    background-position: right;
+    background-position-y: 95%;
+}
+
+.extra {
+    color: var(--dGrey);
+}
+
+.text-box {
+    flex-direction: column;
+}
+
+.text-box {
+    text-align: center;
+
+}
+
+.text-box h1 {
+    color: var(--primary);
+}
+
+.text-box .job {
+    font-size: 1.1em;
+    color: var(--dGrey);
+}
+
+.downCV {
+    margin-top: 15px;
+    height: auto;
+    overflow: hidden;
+    border: solid transparent;
+}
+
+.downCV div {
+    border: solid var(--primary);
+    padding: 5px 10px 5px 10px;
+}
+
+.downCV:hover div:first-child {
+    transition: 0.35s ease-out;
+    border-color: transparent;
+}
+
+.downCV:hover div:last-child {
+    transition: 0.3s ease;
+    background-color: var(--primary);
+    border-radius: 20px;
+}
+
+.downCV div:first-child {
+    width: 75%;
+    border-radius: 8px 0 0 8px;
+    border-right: none;
+} 
+
+.downCV div:last-child {
+    width: 25%;
+    border-radius: 0 8px 8px 0;
+    color: #232b2b;
+    border-left: solid transparent;
+    background-color: #FFD400;
+}  
+
+.downCV div:last-child:hover {
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-color: var(--primary);
+    border-left: solid var(--primary);
+    
+    color: var(--primary);
+    background-color: transparent;
+}
+
+.downCV div:last-child:hover {
+    transition: ease;
+    border-radius: 20px;
+}
+
+
+.downCV div:last-child i {
+    transition: ease;
+    font-size: 0.85em;
+}

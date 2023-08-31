@@ -1,0 +1,190 @@
+/* ------------ MOBILE ------------ */
+@media (max-width: 426px) {
+    .item {
+        width: 90%;
+        /* height: 80vw; */
+    }
+}
+
+/*------------ TABLET ------------*/
+@media (min-width: 426px) and (max-width:1024px) {
+    .item {
+        width: 40%;
+        /* height: 35vw; */
+    }
+}
+
+/* ------------ LAPTOP ------------ */
+@media (min-width:1024px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .item {
+        width: 40%;
+        /* height: 60vh; */
+    }
+}
+
+/* -------------- END MEDIA QUERY-------------- */
+
+.container {
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.proj-container {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.extra {
+    color: var(--bGrey);
+    margin-bottom: 30px;
+}
+
+.item {
+    margin: auto;
+    margin-top: 15px; margin-bottom: 15px;
+    flex-flow: column;
+    border-radius: 10px;
+}
+
+.flip-card {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.item:hover .flip-card {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    border-radius: 10px 10px 0 0;
+}
+
+.back {
+    flex-flow: column;
+    background-color: var(--secondaryBg);
+    transform: rotateY(180deg);
+
+    color: var(--dGrey);
+
+    background-image: url("../../assets/images/watermelon.png");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: bottom left;
+}
+
+.back h4 {
+    margin-bottom: 20px;
+}
+
+.img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    background-color: var(--secondaryBg);
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.img img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.title {
+    font-size: 0.88em;
+}
+
+.content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.34);
+    padding: 1% 3% 1% 3%;
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 94%;
+}
+
+.desc {
+    margin-top: 1%;
+    font-size: 0.83em;
+    color: var(--cGrey);
+    max-lines: 3;
+}
+
+.btns {
+    height: 3em;
+    width: 100%;
+}
+
+.btns div {
+    height: 100%;
+    width: 50%;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: solid var(--bgBorder);
+    border-top: none;
+    border-radius: 8px;
+}
+
+.btns div:first-child {
+    border-radius: 0 0 0 10px;
+    border-right: solid var(--bg);
+    color: var(--primaryWhite);
+
+}
+
+.btns div:last-child {
+    background-color: var(--secondaryBg);
+
+    color: var(--primary);
+    border-radius: 0 0 10px 0;
+    border-left: solid var(--bg);
+}
+
+.btns div:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border-color: var(--bGrey);
+}
+
+.btns div:first-child:hover {
+    color: var(--dGrey);
+    border-top: none;
+    border-right: none;
+}
+
+.btns div:last-child:hover {
+    border-left: solid var(--secondaryBg);
+    border-top: none;
+
+}
+
+.btns a {
+    text-decoration: none;
+    color: inherit;
+}

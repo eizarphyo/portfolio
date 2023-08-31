@@ -1,0 +1,95 @@
+/* MOBILE */
+@media (max-width: 415px) {
+    .card-wrapper {
+        flex-direction: column;
+    }
+    
+    .card {
+        width: 80%;
+    }
+
+    .card-wrapper .card:first-child {
+        margin-bottom: 25px;
+    }
+
+    .skill-container {
+        background-size: 28%;
+    }
+}
+
+/* TABLET */
+@media (min-width: 416px) and (max-width:1025px) {
+    .card {
+        width: 30%;
+    }
+
+    .skill-container {
+        background-size: 18%;
+    }
+}
+
+/* LAPTOP */
+@media (min-width:1025px) {
+    .card {
+        width: 30%;
+    }
+
+    .skill-container {
+        background-size: 15%;
+    }
+    
+}
+
+.skill-container {
+    flex-flow: column;
+    margin-top: 80px; 
+    margin-bottom: 80px;
+    /* border: solid white; */
+    background-image: url('../../assets/images/best-friend.png');
+    background-repeat: no-repeat;
+    /* background-size: 15%; make responsive */
+    background-position: right bottom;    
+}
+
+.extra {
+     margin-bottom: 40px;
+     color: var(--bGrey);
+}
+
+.card-wrapper {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.card {
+    flex-direction: column;
+    border: 1px solid var(--bgBorder);
+    border-radius: 10px;
+    padding: 20px 15px 20px 15px;
+    background-color: var(--secondaryBg);
+}
+
+.card h4 {
+    color: var(--primary);
+}
+
+.img {
+    border-radius: 5px;
+    width: 25%;
+    margin: 8% 0 8% 0;
+}
+
+.img img {
+    width: 85%; 
+}
+
+.desc {
+    font-size: 0.83em;
+    color: var(--dGrey);
+}
+
+.skill-li {
+    color: var(--dGrey);
+    font-size: 0.8em;
+    margin: 3% 0 1% 0;
+}

@@ -1,0 +1,19 @@
+<div class="constrains skill-container flex">
+  <h2>My Skills</h2>
+  <div class="extra">what skills I've built</div>
+
+  <div class="card-wrapper flex">
+    <div class="card flex" *ngFor="let item of skills; let i = index">
+      <h4>{{ item.title }}</h4>
+      <div class="img flex">
+        <img src="{{ item.img }}" />
+      </div>
+      <div class="desc">
+        {{ item.desc }}
+      </div>
+      <ul class="skill-li">
+        <li *ngFor="let li of item.languages">{{ li }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

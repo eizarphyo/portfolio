@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --primary: #FFD400;
+    --primaryWhite: #f9eef2;
+    --bg: #232b2b;
+    --secondaryBg: rgba(128, 128, 128, 0.219);
+    --bgBorder: rgba(128, 128, 128, 0.237);
+
+    --bGrey: #bbbbbb;
+    --cGrey: #cccccc;
+    --dGrey: #dddddd;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url('./assets/fonts/Ubuntu-Regular.ttf');
+}
+
+html {
+    font-size: calc(15px + 0.390625vw);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Ubuntu, sans-serif;
+    padding: 10px 10px 0 10px;
+    background-color: #232b2b;
+    color: #f9eef2;
+    overflow-x: hidden;
+    
+}
+
+/* UTILS */
+.constrains {
+    max-width: 1024px;
+    margin: auto;
+    /* border: solid white; */
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
