@@ -2,7 +2,6 @@
 @media (max-width: 426px) {
     .item {
         width: 90%;
-        /* height: 80vw; */
     }
 }
 
@@ -10,7 +9,6 @@
 @media (min-width: 426px) and (max-width:1024px) {
     .item {
         width: 40%;
-        /* height: 35vw; */
     }
 }
 
@@ -22,7 +20,6 @@
 
     .item {
         width: 40%;
-        /* height: 60vh; */
     }
 }
 

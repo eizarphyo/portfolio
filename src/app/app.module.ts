@@ -8,8 +8,10 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ContactsComponent } from './contacts/contacts.component';
-// import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
+import { environment } from './environment';
+import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { provideStorage, getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -23,10 +25,12 @@ import { ContactsComponent } from './contacts/contacts.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-
+    // AngularFireModule.initializeApp(environment.firebaseConfig),
+    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+    provideFirestore(() => getFirestore()),
+    provideStorage(() => getStorage())
   ],
   providers: [],
   bootstrap: [AppComponent],
-  // schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
