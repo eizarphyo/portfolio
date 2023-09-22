@@ -26,7 +26,13 @@
         <div class="flex">
           <a href="{{ item.git }}" target="_blank">Git Respositry</a>
         </div>
-        <div class="flex" *ngIf="item.isApp">Download App</div>
+        <div class="flex" *ngIf="item.isApp">
+          <a
+            href="https://docs.google.com/uc?export=download&id=1XlDXYd61xx5kqqZqIGwWj5H2chWBIKeL"
+            target="_blank"
+            >Download App</a
+          >
+        </div>
         <div class="flex" *ngIf="!item.isApp">
           <a href="{{ item.deployed }}" target="_blank">Live Demo</a>
         </div>

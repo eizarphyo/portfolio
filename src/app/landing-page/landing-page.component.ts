@@ -20,7 +20,7 @@ const FileSaver = require('file-saver');
 })
 
 export class LandingPageComponent {
-  firestore: Firestore = inject(Firestore);
+  // firestore: Firestore = inject(Firestore);
 
   details!: any;
 
@@ -28,21 +28,21 @@ export class LandingPageComponent {
   ) { }
 
   ngOnInit() {
-    this.getData();
+    // this.getData();
   }
 
-  async getData() {
-    const colleRef: CollectionReference<DocumentData> = collection(
-      this.firestore,
-      'landing'
-    );
+  // async getData() {
+  //   const colleRef: CollectionReference<DocumentData> = collection(
+  //     this.firestore,
+  //     'landing'
+  //   );
 
-    const querySnap = await getDocs(query(colleRef));
-    querySnap.forEach((doc) => {
-      this.details = doc.data();
-    });
-    console.log(this.details);
-  }
+  //   const querySnap = await getDocs(query(colleRef));
+  //   querySnap.forEach((doc) => {
+  //     this.details = doc.data();
+  //   });
+  //   console.log(this.details);
+  // }
 
   downloadCV() {
     const url = "../../assets/CV.pdf";
@@ -54,6 +54,4 @@ export class LandingPageComponent {
       console.log(err);
     }
   }
-
-
 }

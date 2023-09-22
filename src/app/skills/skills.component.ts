@@ -8,7 +8,6 @@ import {
   query,
   orderBy
 } from '@angular/fire/firestore';
-import { ref } from 'firebase/database';
 
 @Component({
   selector: 'app-skills',
@@ -16,51 +15,52 @@ import { ref } from 'firebase/database';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent {
-  firestore: Firestore = inject(Firestore);
+  // firestore: Firestore = inject(Firestore);
 
-  // desc: "Develop single page web applications with Angular and Mobile apps with Flutter.",
-  // desc: "Build databases and APIs with SQL or No-SQL databases using Express."
+  skills: any = [
+    {
+      id: 0,
+      title: 'Frontend',
+      img: "../../assets/images/mobile-web.png",
+      desc: "Design responsive web designs and Develop functioning websites and mobile applications.",
 
-  // skills: any = [
-  //   {
-  //     id: 0,
-  //     title: 'Frontend',
-  //     img: "../../assets/images/mobile-web.png",
-  //     desc: "Design responsive web designs and Develop functioning websites and mobile applications.",
+      languages: [
+        "HTML, CSS",
+        "JavaScript",
+        "TypeScript",
+        "Bootstrap",
+        "Angular",
+        "Flutter"
+      ]
+    }, {
+      id: 1,
+      title: 'Backend',
+      img: "../../assets/images/database.png",
+      desc: "Build database, create servers, operate CRUD with RESTful APIs and cloud deployment.",
+      languages: [
+        "NodeJS",
+        "Express",
+        "MongoDB",
+        "PostgresSQL",
+        "Firebase",
+        "AWS"
+      ]
+    }
+  ]
 
-  //     languages: [
-  //       "HTML, CSS",
-  //       "JavaScript",
-  //       "TypeScript",
-  //       "Angular",
-  //       "Flutter"
-  //     ]
-  //   }, {
-  //     id: 1,
-  //     title: 'Backend',
-  //     img: "../../assets/images/database.png",
-  //     desc: "Build database, create servers, operate CRUD, build RESTful APIs and handle requests, responses and errors.",
-  //     languages: [
-  //       "NodeJS",
-  //       "Express",
-  //       "MongoDB",
-  //       "Postgres",
-  //       "Firebase"
-  //     ]
-  //   }
-  // ]
-
-  skills: any[] = [];
+  // skills: any[] = [];
 
   async ngOnInit() {
-    const colleRef: CollectionReference<DocumentData> = collection(this.firestore, 'skills');
-
-    const ordered: any = colleRef;
-
-    const querySnap = await getDocs(query(colleRef));
-
-    querySnap.forEach((doc) => {
-      this.skills.push(doc.data());
-    })
+    // this.getSkills();
   }
+
+  // async getSkills() {
+  //   const colleRef: CollectionReference<DocumentData> = collection(this.firestore, 'skills');
+
+  //   const querySnap = await getDocs(query(colleRef, orderBy('title', 'desc')));
+
+  //   querySnap.forEach((doc) => {
+  //     this.skills.push(doc.data());
+  //   });
+  // }
 }

@@ -8,7 +8,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ContactsComponent } from './contacts/contacts.component';
-import { environment } from './environment';
+import { environment } from '../environments/environment';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { provideStorage, getStorage } from '@angular/fire/storage';
@@ -25,10 +25,10 @@ import { provideStorage, getStorage } from '@angular/fire/storage';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // AngularFireModule.initializeApp(environment.firebaseConfig),
-    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
-    provideFirestore(() => getFirestore()),
-    provideStorage(() => getStorage())
+
+    // provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+    // provideFirestore(() => getFirestore()),
+    // provideStorage(() => getStorage())
   ],
   providers: [],
   bootstrap: [AppComponent],
