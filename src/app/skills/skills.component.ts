@@ -43,7 +43,7 @@ export class SkillsComponent {
         "MongoDB",
         "PostgresSQL",
         "Firebase",
-        "AWS"
+        "AWS, Google Cloud"
       ]
     }
   ]
