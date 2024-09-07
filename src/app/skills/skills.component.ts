@@ -25,10 +25,12 @@ export class SkillsComponent {
       desc: "Design responsive web designs and Develop functioning websites and mobile applications.",
 
       languages: [
-        "HTML, CSS",
+        "HTML, CSS, Bootstrap",
         "JavaScript",
         "TypeScript",
-        "Bootstrap",
+        "Java",
+        "C#",
+        "Dart",
         "Angular",
         "Flutter"
       ]
@@ -38,10 +40,11 @@ export class SkillsComponent {
       img: "../../assets/images/database.png",
       desc: "Build database, create servers, operate CRUD with RESTful APIs and cloud deployment.",
       languages: [
+        "PostgreSQL",
+        "SQL Server",
         "NodeJS",
         "Express",
         "MongoDB",
-        "PostgresSQL",
         "Firebase",
         "AWS, Google Cloud"
       ]

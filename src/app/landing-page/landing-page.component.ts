@@ -45,7 +45,8 @@ export class LandingPageComponent {
   // }
 
   downloadCV() {
-    const url = "../../assets/CV.pdf";
+    // const url = "../../assets/CV.pdf";
+    const url = "https://docs.google.com/document/d/1U8vN7Dv0qosvV6_cwT8AMXj59eELcQl_wv1WIICpANU//export?format=pdf";
     const name = "CV_eizarphyo.pdf";
 
     try {
